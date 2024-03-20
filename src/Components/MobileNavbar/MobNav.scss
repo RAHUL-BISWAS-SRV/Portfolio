@@ -1,0 +1,45 @@
+.mobile_navbar_component {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .mobile_navbar_component {
+        position: absolute;
+        bottom: 0rem;
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        background-color: rgb(248, 226, 26);
+
+        .mobile_navbar_container {
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .link_item {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.5rem;
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover {
+                    background-color: white;
+                    color: rgb(248, 226, 26);
+                    border-radius: 50%;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
